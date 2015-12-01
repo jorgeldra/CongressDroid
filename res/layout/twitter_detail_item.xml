@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemListStart"
+        android:orientation="horizontal"
+         android:layout_marginTop="10dip" >
+		
+        <ImageView 
+            
+            android:id="@+id/itemListTweetImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+          
+            />
+        
+       
+        <!-- poner borde a una imagen android:background="#000000"
+           
+			android:padding="1dp" -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@id/itemListTweetImage" >
+
+            <TextView
+                android:id="@+id/itemListTweetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/itemListTweetIdentifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                 android:layout_toRightOf="@id/itemListTweetName"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/itemListTweetTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        		android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/itemListTweetIdentifier" />
+            
+            <TextView
+            android:id="@+id/itemListTweetTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/itemListTweetTime" />
+        
+        </RelativeLayout>
+        
+        <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/itemListTweetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/itemListTweetIdentifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_toRightOf="@id/itemListTweetName"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/itemListTweetTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/itemListTweetIdentifier" />
+        </RelativeLayout> -->
+    </RelativeLayout>
+
+   <!-- <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/itemListTweetTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+    </LinearLayout>  --> 
+    
+    
+
+    <LinearLayout
+        android:id="@+id/Li_Seperator"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/layout2"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="#37000000"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout>

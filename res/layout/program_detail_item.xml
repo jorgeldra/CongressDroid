@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/itemListStart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#666666"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemListStart"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/itemListIdentifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/itemListName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="5px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/itemListNumTrabajos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/itemListModerador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="5px" />
+    </LinearLayout>
+    
+    
+
+    <LinearLayout
+        android:id="@+id/Li_Seperator"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/layout2"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="#37000000"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/ribbon_menu_home" android:title="Home" android:icon="@drawable/ic_menu_home"></item>
+    <!--  <item android:id="@+id/ribbon_menu_programa" android:title="Programa" android:icon="@drawable/ic_launcher"></item>-->
+    <item android:id="@+id/ribbon_menu_programa" android:title="Programa" android:icon="@android:drawable/ic_menu_today"></item>
+    <item android:id="@+id/ribbon_menu_autor" android:title="Autores" android:icon="@drawable/ic_authors"></item>
+
+</menu>

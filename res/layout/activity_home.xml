@@ -1,0 +1,159 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.devsmart.android.ui.HorizontalListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:background="#DF013A" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTituloPortada"
+            style="@style/TextoSeioPortada"
+            android:layout_marginTop="130dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutWebView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp" >
+
+            <WebView
+                android:id="@+id/webView1"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="170dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutWebView"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnEstaPasando"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:text="Está pasando"
+                android:textColor="@color/blanco" >
+            </Button>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="3dp"
+                android:layout_height="fill_parent"
+                android:background="@color/blanco" />
+
+            <Button
+                android:id="@+id/btnTodoPrograma"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:paddingLeft="10dp"
+                android:text="Todo"
+                android:textColor="@color/blanco" >
+            </Button>
+        </LinearLayout>
+
+        <!--
+        <com.darvds.ribbonmenu.RibbonMenuView
+            android:id="@+id/ribbonMenuView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.darvds.ribbonmenu.RibbonMenuView>
+        -->
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#111"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+</android.support.v4.widget.DrawerLayout><!--
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.devsmart.android.ui.HorizontalListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:background="#DF013A" />
+
+        <TextView
+            android:id="@+id/txtTituloPortada"
+            style="@style/TextoSeioPortada"
+            android:layout_marginTop="130dp" />
+
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="170dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="440dp"
+             >
+
+            <Button
+                android:id="@+id/btnEstaPasando"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Está pasando" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnTodoPrograma"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Todo" >
+            </Button>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#111"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+</android.support.v4.widget.DrawerLayout>
+-->

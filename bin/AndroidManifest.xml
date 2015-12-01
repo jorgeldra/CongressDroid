@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jorgeldra.seio"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.android.seio.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.seio.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <!-- cambiar actionbar abajo (incluir dentro de apllication) android:uiOptions="splitActionBarWhenNarrow" -->
+        <activity android:name="com.devsmart.android.ui.horizontiallistview" />
+        <activity
+            android:name="com.jorgeldra.seio.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.HomeActivity"
+            android:label=""
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.ProgramActivity"
+            android:label="@string/title_activity_program"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.PaperActivity"
+            android:label="@string/title_activity_paper" >
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.MyProgramActivity"
+            android:label="@string/title_activity_my_program" >
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.AutoresActivity"
+            android:label="@string/title_activity_autores" >
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.ConfPlenariasActivity"
+            android:label="@string/title_activity_conf_plenarias" >
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.PremioRamiroActivity"
+            android:label="@string/title_activity_premio_ramiro" >
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.FechasActivity"
+            android:label="@string/title_activity_fechas" >
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.CuotasActivity"
+            android:label="@string/title_activity_cuotas" >
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.SedesActivity"
+            android:label="@string/title_activity_sedes" >
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.InscripcionActivity"
+            android:label="@string/title_activity_inscripcion" >
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.ComoLlegarActivity"
+            android:label="@string/title_activity_como_llegar" >
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.BusquedaActivity"
+            android:label="@string/title_activity_busqueda" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBjX9pUX1Jofeo24sLohFPkCh10pk6H2UY" />
+
+        <activity
+            android:name="com.jorgeldra.seio.MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.TwitterActivity"
+            android:label="@string/title_activity_twitter"
+            android:windowSoftInputMode="adjustPan" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+ 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="oauth" android:host="t4jsample"/>
+            </intent-filter>
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="t4jsample"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+       <activity
+            android:name="com.jorgeldra.seio.utils.ForceUpdateBBDD"
+            android:label="@string/title_activity_forzar_actualizacion"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.jorgeldra.seio.LocalizacionesActivity"
+            android:label="@string/title_activity_localizaciones" >
+        </activity>
+    </application>
+
+</manifest>

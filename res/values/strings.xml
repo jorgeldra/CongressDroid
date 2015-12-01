@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SEIO</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- MENU PRINCIPAL -->
+    <string name="menu_settings">Settings</string>
+    <string name="accessLogoInicial">Logo SEIO</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="menu_programa">Programa</string>
+    <string name="menu_mi_programa">Mi Programa</string>
+    <string name="menu_asistir">Asistir</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_search">Buscar</string>
+    <string name="menu_noticias">Noticias</string>
+    <string name="porDia">Por Día</string>
+    <string name="porAutor">Por Autor</string>
+    <string name="conferenciasPlenarias">Conferencias Plenarias</string>
+    <string name="miPrograma">Mi Programa</string>
+    <string name="premioRamiro">Premio Ramiro</string>
+    <string name="aniversario">50 Aniversario</string>
+    <string name="acercaDe">Acerca De</string>
+    <string name="menu_refresh">Actualizar</string>
+    <string name="menu_social_share">Compartir</string>
+    <string name="title_activity_program">Programa</string>
+    <string name="title_activity_paper">Trabajo</string>
+    <string name="title_activity_my_program">Mi Programa</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- MENU LATERAL IZQUIERDO -->
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+    <string-array name="seio_navigation_array">
+        <item>Home</item>
+        <item>Programa</item>
+        <item>Mi programa</item>
+        <item>Autores</item>
+        <item>Conferencias plenarias</item>
+        <item>Premio Ramiro Melendreras</item>
+        <item>Fechas</item>
+        <item>Sedes</item>
+        <item>Cuotas</item>
+        <item>Inscripción</item>
+        <item>Como llegar</item>
+        <item>Sigue el congreso</item>
+    </string-array>
+
+    <!-- MENU PROGRAMA -->
+    <string name="chairperson">Moderador</string>
+    <string name="title_activity_paper">Trabajo</string>
+    <string name="title_activity_my_program">Mi Programa</string>
+
+    <!-- PANTALLA MI PROGRAMA -->
+    <string-array name="array_order_favourites">
+        <item>Por fecha de añadido</item>
+        <item>Por fecha</item>
+        <item>Por 1er autor</item>
+        <item>Por localizacion</item>
+        <item>Por titulo</item>
+    </string-array>
+
+    <string name="empty_favourites">No dispone de ningún favorito en estos momentos.</string>
+    <string name="empty_autores">No se dispone de autores en estos momentos.</string>
+    <string name="empty_localizaciones">No se dispone de sedes en estos momentos.</string>
+    <string name="empty_tweets">No se han encontrado tweets.</string>
+    <string name="title_activity_conf_plenarias"></string>
+    <string name="title_activity_premio_ramiro"></string>
+    <string name="title_activity_fechas"></string>
+    <string name="title_activity_cuotas"></string>
+    <string name="title_activity_sedes"></string>
+    <string name="title_activity_inscripcion"></string>
+    <string name="title_activity_como_llegar"></string>
+    <string name="title_activity_busqueda"></string>
+    <string name="title_activity_map">Localización de sede</string>
+    <string name="title_activity_twitter">#CongresoSEIO</string>
+    <string name="title_activity_autores">Autores</string>
+    <string name="title_activity_forzar_actualizacion">ForzarActualizacion</string>
+    <string name="title_activity_localizaciones">Sedes</string>
+
+</resources>
